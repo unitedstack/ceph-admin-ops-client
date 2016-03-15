@@ -1,0 +1,26 @@
+{
+  "name": "ceph-admin-ops-client",
+  "version": "0.1.0",
+  "description": "A wrapper for Ceph Object Gateway's Admin Ops API",
+  "main": "./lib/api",
+  "scripts": {
+    "docs": "node ./docs/generateDocs.js"
+  },
+  "author": "TobiLG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobilg/ceph-admin-ops-client/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobilg/ceph-admin-ops-client"
+  },
+  "homepage": "https://github.com/tobilg/ceph-admin-ops-client",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "handlebars": "^4.0.5"
+  }
+}
