@@ -39,7 +39,7 @@ api.getUserInfo({ uid: "myUser" }).then(function(userInfo){
 * `host`: Either the IP address or the hostname of the Ceph Object Gateway endpoint (default is `s3.amazonaws.com`).
 * `port`: The port of the Ceph Object Gateway endpoint (default is `80`).
 * `protocol`: Either `http` or `https` (default is `http`).
-* `useSubdomain`: If a subdomain shall be used (boolean). Ddefault is `false`.
+* `useSubdomain`: If a subdomain shall be used (boolean). Default is `false`.
 * `adminBucket`: The name of the "admin bucket" (the URI which is configured for the base admin endpoint). Default is `admin`.
 * `expiresInMinutes`: The time in minutes until the request expires (default is `10`).
 
@@ -127,6 +127,13 @@ Remove an existing user.
 | --------- | --------- | --------- |
 | uid | string | Yes |
 | purge-data | boolean | No |
+
+
+### getUserList(parameters)
+List users
+  
+| Parameter | Data Type | Mandatory? |
+| --------- | --------- | --------- |
 
 
 ### createSubUser(parameters)

@@ -1,6 +1,6 @@
 {
-  "name": "ceph-admin-ops-client",
-  "version": "0.1.5",
+  "name": "rgw-admin-client",
+  "version": "0.2.0",
   "description": "A wrapper for Ceph Object Gateway's Admin Ops API",
   "main": "./lib/api",
   "scripts": {
@@ -9,13 +9,13 @@
   "author": "TobiLG",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tobilg/ceph-admin-ops-client/issues"
+    "url": "https://github.com/leohihimax/ceph-admin-ops-client/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tobilg/ceph-admin-ops-client"
+    "url": "https://github.com/leohihimax/ceph-admin-ops-client"
   },
-  "homepage": "https://github.com/tobilg/ceph-admin-ops-client",
+  "homepage": "https://github.com/leohihimax/ceph-admin-ops-client",
   "dependencies": {
     "bluebird": "^3.3.4",
     "request": "^2.69.0"
