@@ -5,7 +5,7 @@ This module contains a Node.js wrapper around the HTTP API of [Ceph Object Gatew
 The module can be installed via
 
 ```bash
-npm install ceph-admin-ops-client --save
+npm install rgw-admin-client --save
 ```
 
 ## Basic usage
@@ -13,7 +13,7 @@ As a minimum, the `accessKey`, `secretKey`, `host` and `port` properties need to
 
 **Setup**
 ```javascript
-var AdminOpsAPI = require("ceph-admin-ops-client");
+var AdminOpsAPI = require("rgw-admin-client");
 
 var api = new AdminOpsAPI({
     accessKey: "<<ACCESS_KEY>>",
