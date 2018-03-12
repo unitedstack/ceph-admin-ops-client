@@ -1,12 +1,11 @@
 {
   "name": "rgw-admin-client",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "A wrapper for Ceph Object Gateway's Admin Ops API",
-  "main": "./lib/api",
   "scripts": {
     "docs": "node ./docs/generateDocs.js"
   },
-  "author": "TobiLG",
+  "author": "majiajun",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/leohihimax/ceph-admin-ops-client/issues"

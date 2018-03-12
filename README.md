@@ -13,20 +13,35 @@ As a minimum, the `accessKey`, `secretKey`, `host` and `port` properties need to
 
 **Setup**
 ```javascript
-var AdminOpsAPI = require("rgw-admin-client");
+var RGW = require("rgw-admin-client");
 
-var api = new AdminOpsAPI({
+var rgw = new RGW({
     accessKey: "<<ACCESS_KEY>>",
     secretKey: "<<SECRET_KEY>>",
     host: "192.168.0.100",
+    protocol: "http",
     port: 10000
 });
+
+// rgw admin api client
+var admin = rgw.admin;
+
+// rgw s3 api client
+var s3 = rgw.s3
 ```
 
-**Sample method call:**
+**Sample rgw admin method call:**
 ```javascript
-api.getUserInfo({ uid: "myUser" }).then(function(userInfo){
+admin.getUserInfo({ uid: "myUser" }).then(function(userInfo){
     console.log(JSON.stringify(userInfo));
+}).catch(function(error) {
+    console.log(JSON.stringify(error));
+});
+```
+**Sample rgw s3 method call:**
+```javascript
+s3.createBucket({ name: "bucket", acl: "private" }).then(function(bucket){
+    console.log(JSON.stringify(bucket));
 }).catch(function(error) {
     console.log(JSON.stringify(error));
 });
@@ -321,3 +336,10 @@ Update the quota of a bucket.
 | uid | string | Yes |
 | quotaObject | string | Yes |
 
+### createBucket(parameters)
+create bucket  s3.create
+
+| Parameter | Data Type | Mandatory? |
+| --------- | --------- | --------- |
+| name | string | Yes |
+| acl | string | No |
