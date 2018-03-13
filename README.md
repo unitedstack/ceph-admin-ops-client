@@ -317,7 +317,9 @@ Update the quota of an user.
 | Parameter | Data Type | Mandatory? |
 | --------- | --------- | --------- |
 | uid | string | Yes |
-| quotaObject | string | Yes |
+| max-objects | number | No |
+| max-size-kb | number | No |
+| enabled | boolean | No |
 
 
 ### getBucketQuota(parameters)
@@ -334,7 +336,9 @@ Update the quota of a bucket.
 | Parameter | Data Type | Mandatory? |
 | --------- | --------- | --------- |
 | uid | string | Yes |
-| quotaObject | string | Yes |
+| max-objects | number | No |
+| max-size-kb | number | No |
+| enabled | boolean | No |
 
 ### createBucket(parameters)
 create bucket  s3.create
